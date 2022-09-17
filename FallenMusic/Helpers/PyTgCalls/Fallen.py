@@ -106,7 +106,7 @@ async def stream_end_handler(_, update: Update):
                     photo=thumb,
                     reply_markup=InlineKeyboardMarkup(buttons),
                     caption=(
-                        f"<b>➻ sᴛᴀʀᴛᴇᴅ sᴛʀᴇᴀᴍɪɴɢ</b>\n\n**✨ ᴛɪᴛʟᴇ :** [{title[:40]}](https://www.youtube.com/watch?v={afk}) \n**🥀 ʀᴇǫᴜᴇsᴛᴇᴅ ʙʏ :** {mention}"
+                        f"<b>➻ sᴛᴀʀᴛᴇᴅ sᴛʀᴇᴀᴍɪɴɢ</b>\n\n**ᴛɪᴛʟᴇ :** [{title[:40]}](https://www.youtube.com/watch?v={afk}) \n**ʀᴇǫᴜᴇsᴛᴇᴅ ʙʏ :** {mention}"
                     ),
                 )
                 os.remove(thumb)
@@ -147,7 +147,7 @@ async def stream_end_handler(_, update: Update):
                     chat_id,
                     photo=thumb,
                     reply_markup=InlineKeyboardMarkup(buttons),
-                    caption=f"<b>➻ sᴛᴀʀᴛᴇᴅ sᴛʀᴇᴀᴍɪɴɢ</b>\n\n**✨ ᴛɪᴛʟᴇ :** {title[:40]}\n**🥀 ʀᴇǫᴜᴇsᴛᴇᴅ ʙʏ :** {mention}",
+                    caption=f"<b>➻ sᴛᴀʀᴛᴇᴅ sᴛʀᴇᴀᴍɪɴɢ</b>\n\n**ᴛɪᴛʟᴇ :** {title[:40]}\n**ʀᴇǫᴜᴇsᴛᴇᴅ ʙʏ :** {mention}",
                 )
     except Exception as e:
         print(e)
